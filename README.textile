@@ -1,7 +1,7 @@
 h2. Collapse
 
 This gem adds a method @collapse!@ to Hash.
-Using it merges a subhash with self while applying set union to any common arrays.
+Using collapse! merges a sub-hash with self while applying set union to any common arrays.
 
 h2. Example
 
@@ -21,13 +21,11 @@ h3. example_config.yml
 </code>
 </pre>
 
-h3. ruby
-
 <pre>
 <code>
 	tmp = YAML.load_file 'example_config.yml'
 	tmp.inspect		# => {:foo => ['a', 'b', 'd'], :bar => {:foo => ['b', 'd', 'e']}}
-	tmp.collapse!
+	tmp.collapse! :bar
 	tmp.inspect		# => {:foo => ['a', 'b', 'd', 'e']}
 </code>
 </pre>
