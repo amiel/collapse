@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = %q{hash_union_arrays}
-  s.version = "0.1"
+  s.version = "0.2"
 
   s.authors = ["Amiel Martin"]
   s.date = %q{2009-04-17}
