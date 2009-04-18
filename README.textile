@@ -1,0 +1,7 @@
+h2. Hash Union Arrays
+
+Has a terrible name, but is very useful. This gem implements the | operator for Hash. Using it merges the two hashes together while applying set union to any common arrays.
+
+h2. Author
+
+Amiel Martin
