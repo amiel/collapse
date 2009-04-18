@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.date = %q{2009-04-17}
   s.description = %q{Allows a hash with arrays as values to merge and union common arrays instead of overwriting them.}
   s.email = %q{amiel@tatango.com}
-  s.files = ["README.textile", 'lib/hash_union_arrays.rb', 'Rakefile.rb', 'test/*']
+  s.files = ["README.textile", 'lib', 'lib/hash_union_arrays.rb', 'Rakefile.rb', 'test', 'test/test_helper.rb', 'test/test_hash_union_arrays.rb']
   s.has_rdoc = false
   # s.rdoc_options = ["--inline-source", "--charset=UTF-8"]
   s.require_paths = ["lib"]
