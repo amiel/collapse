@@ -1,6 +1,37 @@
-h2. Hash Union Arrays
+h2. Collapse
 
-Has a terrible name, but is very useful. This gem implements the | operator for Hash. Using it merges the two hashes together while applying set union to any common arrays.
+This gem adds a method @collapse!@ to Hash.
+Using it merges a subhash with self while applying set union to any common arrays.
+
+h2. Example
+
+h3. example_config.yml
+
+<pre>
+<code>
+:foo:
+	- a
+	- b
+	- d
+:bar:
+	:foo:
+		- b
+		- d
+		- e
+</code>
+</pre>
+
+h3. ruby
+
+<pre>
+<code>
+	tmp = YAML.load_file 'example_config.yml'
+	tmp.inspect		# => {:foo => ['a', 'b', 'd'], :bar => {:foo => ['b', 'd', 'e']}}
+	tmp.collapse!
+	tmp.inspect		# => {:foo => ['a', 'b', 'd', 'e']}
+</code>
+</pre>
+
 
 h2. Author
 
