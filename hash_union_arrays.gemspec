@@ -12,4 +12,5 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   # s.rubygems_version = %q{1.3.0}
 	s.test_files = Dir["test/test_hash_union_arrays.rb"] unless $SAFE > 0
+	s.summary = %q{Allows a hash with arrays as values to merge and union common arrays instead of overwriting them.}
 end

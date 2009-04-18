@@ -1,9 +1,5 @@
 module HashIntersectArrays
-	module Version
-		STRING = '0.2'
-	end
 
-	
 	# acts just like Hash#merge, except that any arrays
 	def self.ordered_union(a, b)
 		for k in b.keys
